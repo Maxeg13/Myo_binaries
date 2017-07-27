@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[10];
-    char stringdata0[99];
+    QByteArrayData data[11];
+    char stringdata0[106];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -38,12 +38,14 @@ QT_MOC_LITERAL(5, 55, 7), // "drawing"
 QT_MOC_LITERAL(6, 63, 10), // "getFeature"
 QT_MOC_LITERAL(7, 74, 9), // "reconnect"
 QT_MOC_LITERAL(8, 84, 6), // "getEMG"
-QT_MOC_LITERAL(9, 91, 7) // "kickMyo"
+QT_MOC_LITERAL(9, 91, 7), // "kickMyo"
+QT_MOC_LITERAL(10, 99, 6) // "getCor"
 
     },
     "MainWindow\0featureOutSignal\0\0"
     "std::vector<float>\0sended\0drawing\0"
-    "getFeature\0reconnect\0getEMG\0kickMyo"
+    "getFeature\0reconnect\0getEMG\0kickMyo\0"
+    "getCor"
 };
 #undef QT_MOC_LITERAL
 
@@ -53,7 +55,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -61,15 +63,16 @@ static const uint qt_meta_data_MainWindow[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   49,    2, 0x06 /* Public */,
-       4,    0,   52,    2, 0x06 /* Public */,
+       1,    1,   54,    2, 0x06 /* Public */,
+       4,    0,   57,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    0,   53,    2, 0x0a /* Public */,
-       6,    1,   54,    2, 0x0a /* Public */,
-       7,    1,   57,    2, 0x0a /* Public */,
-       8,    1,   60,    2, 0x0a /* Public */,
-       9,    0,   63,    2, 0x0a /* Public */,
+       5,    0,   58,    2, 0x0a /* Public */,
+       6,    1,   59,    2, 0x0a /* Public */,
+       7,    1,   62,    2, 0x0a /* Public */,
+       8,    1,   65,    2, 0x0a /* Public */,
+       9,    0,   68,    2, 0x0a /* Public */,
+      10,    0,   69,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    2,
@@ -80,6 +83,7 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, 0x80000000 | 3,    2,
     QMetaType::Void, QMetaType::QString,    2,
     QMetaType::Void, 0x80000000 | 3,    2,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -98,6 +102,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->reconnect((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 5: _t->getEMG((*reinterpret_cast< std::vector<float>(*)>(_a[1]))); break;
         case 6: _t->kickMyo(); break;
+        case 7: _t->getCor(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -145,13 +150,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 8)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 7;
+        _id -= 8;
     }
     return _id;
 }
