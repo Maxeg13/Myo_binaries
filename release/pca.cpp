@@ -16,11 +16,10 @@ void PCA::algorithm()
     cout<<endl<<"eigenvals"<<endl<<eigvals<<endl;
 }
 
-void PCA::proect(int n,std::vector<float>&v)
+void PCA::proect(std::vector<float>&v)
 {
     featuresOut=features*eigvecs_s;
-v.resize(n);
-    for(int i=0;i<n;i++)
+    for(int i=0;i<v.size();i++)
         v[i]=featuresOut(0,i);
 //    for(int i=0;i<n;i++)
 //        v[i]=i;
