@@ -89,7 +89,7 @@ void PCA::centr()
     for(int i=0;i<buf.cols();i++)
     {
         buf_c.col(i)-=buf.col(i).mean()*v;
-		buf_c.col(i)/=buf_c.col(i).maxCoeff();
+//		buf_c.col(i)/=buf_c.col(i).maxCoeff();
     }
 }
 
