@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[11];
-    char stringdata0[106];
+    QByteArrayData data[14];
+    char stringdata0[143];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,20 +32,23 @@ static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 16), // "featureOutSignal"
 QT_MOC_LITERAL(2, 28, 0), // ""
-QT_MOC_LITERAL(3, 29, 18), // "std::vector<float>"
-QT_MOC_LITERAL(4, 48, 6), // "sended"
-QT_MOC_LITERAL(5, 55, 7), // "drawing"
-QT_MOC_LITERAL(6, 63, 10), // "getFeature"
-QT_MOC_LITERAL(7, 74, 9), // "reconnect"
-QT_MOC_LITERAL(8, 84, 6), // "getEMG"
-QT_MOC_LITERAL(9, 91, 7), // "kickMyo"
-QT_MOC_LITERAL(10, 99, 6) // "getCor"
+QT_MOC_LITERAL(3, 29, 13), // "vector<float>"
+QT_MOC_LITERAL(4, 43, 6), // "sended"
+QT_MOC_LITERAL(5, 50, 7), // "drawing"
+QT_MOC_LITERAL(6, 58, 10), // "getFeature"
+QT_MOC_LITERAL(7, 69, 9), // "reconnect"
+QT_MOC_LITERAL(8, 79, 6), // "getEMG"
+QT_MOC_LITERAL(9, 86, 7), // "kickMyo"
+QT_MOC_LITERAL(10, 94, 6), // "getCor"
+QT_MOC_LITERAL(11, 101, 13), // "buttonClicked"
+QT_MOC_LITERAL(12, 115, 14), // "buttonReleased"
+QT_MOC_LITERAL(13, 130, 12) // "serialChoose"
 
     },
-    "MainWindow\0featureOutSignal\0\0"
-    "std::vector<float>\0sended\0drawing\0"
-    "getFeature\0reconnect\0getEMG\0kickMyo\0"
-    "getCor"
+    "MainWindow\0featureOutSignal\0\0vector<float>\0"
+    "sended\0drawing\0getFeature\0reconnect\0"
+    "getEMG\0kickMyo\0getCor\0buttonClicked\0"
+    "buttonReleased\0serialChoose"
 };
 #undef QT_MOC_LITERAL
 
@@ -55,7 +58,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,16 +66,19 @@ static const uint qt_meta_data_MainWindow[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   54,    2, 0x06 /* Public */,
-       4,    0,   57,    2, 0x06 /* Public */,
+       1,    1,   69,    2, 0x06 /* Public */,
+       4,    0,   72,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    0,   58,    2, 0x0a /* Public */,
-       6,    1,   59,    2, 0x0a /* Public */,
-       7,    1,   62,    2, 0x0a /* Public */,
-       8,    1,   65,    2, 0x0a /* Public */,
-       9,    0,   68,    2, 0x0a /* Public */,
-      10,    0,   69,    2, 0x0a /* Public */,
+       5,    0,   73,    2, 0x0a /* Public */,
+       6,    1,   74,    2, 0x0a /* Public */,
+       7,    1,   77,    2, 0x0a /* Public */,
+       8,    1,   80,    2, 0x0a /* Public */,
+       9,    0,   83,    2, 0x0a /* Public */,
+      10,    0,   84,    2, 0x0a /* Public */,
+      11,    1,   85,    2, 0x0a /* Public */,
+      12,    1,   88,    2, 0x0a /* Public */,
+      13,    0,   91,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    2,
@@ -85,6 +91,9 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, 0x80000000 | 3,    2,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -95,21 +104,24 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         MainWindow *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->featureOutSignal((*reinterpret_cast< std::vector<float>(*)>(_a[1]))); break;
+        case 0: _t->featureOutSignal((*reinterpret_cast< vector<float>(*)>(_a[1]))); break;
         case 1: _t->sended(); break;
         case 2: _t->drawing(); break;
-        case 3: _t->getFeature((*reinterpret_cast< std::vector<float>(*)>(_a[1]))); break;
+        case 3: _t->getFeature((*reinterpret_cast< vector<float>(*)>(_a[1]))); break;
         case 4: _t->reconnect((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 5: _t->getEMG((*reinterpret_cast< std::vector<float>(*)>(_a[1]))); break;
+        case 5: _t->getEMG((*reinterpret_cast< vector<float>(*)>(_a[1]))); break;
         case 6: _t->kickMyo(); break;
         case 7: _t->getCor(); break;
+        case 8: _t->buttonClicked((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 9: _t->buttonReleased((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 10: _t->serialChoose(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (MainWindow::*_t)(std::vector<float> );
+            typedef void (MainWindow::*_t)(vector<float> );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MainWindow::featureOutSignal)) {
                 *result = 0;
                 return;
@@ -150,19 +162,19 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 11)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 8;
+        _id -= 11;
     }
     return _id;
 }
 
 // SIGNAL 0
-void MainWindow::featureOutSignal(std::vector<float> _t1)
+void MainWindow::featureOutSignal(vector<float> _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_QDataCollector_t {
     QByteArrayData data[4];
-    char stringdata0[39];
+    char stringdata0[34];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,10 +32,10 @@ static const qt_meta_stringdata_QDataCollector_t qt_meta_stringdata_QDataCollect
 QT_MOC_LITERAL(0, 0, 14), // "QDataCollector"
 QT_MOC_LITERAL(1, 15, 3), // "EMG"
 QT_MOC_LITERAL(2, 19, 0), // ""
-QT_MOC_LITERAL(3, 20, 18) // "std::vector<float>"
+QT_MOC_LITERAL(3, 20, 13) // "vector<float>"
 
     },
-    "QDataCollector\0EMG\0\0std::vector<float>"
+    "QDataCollector\0EMG\0\0vector<float>"
 };
 #undef QT_MOC_LITERAL
 
@@ -67,7 +67,7 @@ void QDataCollector::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         QDataCollector *_t = static_cast<QDataCollector *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: { int _r = _t->EMG((*reinterpret_cast< std::vector<float>(*)>(_a[1])));
+        case 0: { int _r = _t->EMG((*reinterpret_cast< vector<float>(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = _r; }  break;
         default: ;
         }
@@ -75,7 +75,7 @@ void QDataCollector::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef int (QDataCollector::*_t)(std::vector<float> );
+            typedef int (QDataCollector::*_t)(vector<float> );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QDataCollector::EMG)) {
                 *result = 0;
                 return;
@@ -121,7 +121,7 @@ int QDataCollector::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-int QDataCollector::EMG(std::vector<float> _t1)
+int QDataCollector::EMG(vector<float> _t1)
 {
     int _t0 = int();
     void *_a[] = { const_cast<void*>(reinterpret_cast<const void*>(&_t0)), const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
